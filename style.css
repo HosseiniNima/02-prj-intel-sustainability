@@ -66,9 +66,12 @@ header p {
 }
 
 .timeline-card img {
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 10px;
   display: block; /* Ensure the image behaves as a block element */
+  height: 120px; /* Slightly increase the image height */
+  object-fit: cover; /* Ensure the image scales properly within the height */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .timeline-card h2 {
