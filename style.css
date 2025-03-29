@@ -78,7 +78,7 @@ header p {
 
 .timeline-card h2 {
   font-size: 1.5rem;
-  color: #333;
+  color: #000000;
   text-align: center; /* Center the text horizontally */
   margin: 10px 0; /* Add some spacing around the heading */
 }
@@ -97,8 +97,8 @@ header p {
   left: 0; /* Align to the left of the card */
   width: 100%; /* Make the paragraph span the full width of the card */
   height: 100%; /* Make the paragraph span the full height of the card */
-  background-color: #004080; /* Add a semi-transparent black background */
-  color: #fff; /* Set text color to white for contrast */
+  background-color: #004080; /* Use a semi-transparent black background */
+  color: #fff; /* Change text color back to white */
   display: flex; /* Use flexbox to center the text */
   align-items: center; /* Vertically center the text */
   justify-content: center; /* Horizontally center the text */
@@ -110,7 +110,14 @@ header p {
 }
 
 .timeline-card:hover p {
-  opacity: 0.85; /* Make the paragraph visible on hover */
+  opacity: 1; /* Ensure the paragraph is fully visible on hover */
+}
+
+.timeline p {
+  text-align: center; /* Center the text horizontally */
+  margin-top: 10px; /* Add some spacing above the text */
+  font-size: 1rem; /* Ensure the text is readable */
+  color: #555; /* Use a subtle color for the text */
 }
 
 /* For WebKit browsers (Chrome, Edge, Safari) */
@@ -145,5 +152,5 @@ footer {
   background-color: #f4f4f4;
   padding: 10px;
   font-size: 0.9rem;
-  color: #555;
+  color: #000000;
 }
