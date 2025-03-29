@@ -39,6 +39,8 @@ header p {
   overflow-x: auto; /* Enable horizontal scrolling */
   scrollbar-width: thin; /* Keep the scrollbar thin for Firefox */
   scrollbar-color: #007ACC #f0f0f0; /* Keep the custom colors for Firefox */
+  overflow-y: hidden; /* Completely hide vertical scrolling */
+  height: auto; /* Ensure the content adjusts to fit its height */
 }
 
 .timeline-container {
@@ -48,6 +50,8 @@ header p {
   max-width: 70%; /* Restrict the container to 70% of the page width */
   overflow-x: auto; /* Allow horizontal scrolling */
   margin: 0 auto; /* Center the container horizontally */
+  align-items: center; /* Align items to prevent vertical overflow */
+  height: 100%; /* Ensure the container does not exceed its content height */
 }
 
 .timeline-card {
@@ -63,6 +67,7 @@ header p {
   max-width: 300px; /* Set a maximum width for the cards */
   box-sizing: border-box; /* Include padding and border in width */
   margin: 0 auto; /* Center the cards within their row */
+  height: auto; /* Allow the card height to adjust based on its content */
 }
 
 .timeline-card:hover {
