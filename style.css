@@ -1,1 +1,84 @@
-/* Add your CSS here */
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+header img {
+  max-width: 150px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Timeline Section */
+.timeline {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.timeline-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.timeline-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.timeline-card:hover {
+  transform: scale(1.05);
+}
+
+.timeline-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.timeline-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.timeline-card h3 {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.timeline-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
