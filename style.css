@@ -31,13 +31,15 @@ header p {
 .timeline {
   padding: 20px;
   background-color: #fff;
+  overflow-x: auto; /* Enable horizontal scrolling */
 }
 
 .timeline-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: flex; /* Use flexbox to arrange cards in a row */
+  flex-wrap: nowrap; /* Prevent wrapping to keep all cards in a single row */
+  gap: 20px; /* Add space between cards */
+  max-width: 100%; /* Restrict the container to the full width of the page */
+  overflow-x: auto; /* Allow horizontal scrolling */
 }
 
 .timeline-card {
@@ -48,6 +50,8 @@ header p {
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  flex: 0 0 calc(25% - 20px); /* Show 4 cards at a time, accounting for gaps */
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 .timeline-card:hover {
