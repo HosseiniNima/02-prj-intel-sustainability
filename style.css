@@ -44,6 +44,7 @@ header p {
 }
 
 .timeline-card {
+  position: relative; /* Set position to allow child elements to be positioned relative to this card */
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -62,6 +63,7 @@ header p {
 .timeline-card img {
   max-width: 100%;
   border-radius: 5px;
+  display: block; /* Ensure the image behaves as a block element */
 }
 
 .timeline-card h2 {
@@ -75,8 +77,26 @@ header p {
 }
 
 .timeline-card p {
-  font-size: 0.9rem;
-  color: #666;
+  opacity: 0; /* Make the paragraph invisible by default */
+  position: absolute; /* Position the paragraph relative to the card */
+  top: 0; /* Align to the top of the card */
+  left: 0; /* Align to the left of the card */
+  width: 100%; /* Make the paragraph span the full width of the card */
+  height: 100%; /* Make the paragraph span the full height of the card */
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent black background */
+  color: #fff; /* Set text color to white for contrast */
+  display: flex; /* Use flexbox to center the text */
+  align-items: center; /* Vertically center the text */
+  justify-content: center; /* Horizontally center the text */
+  text-align: center; /* Center-align the text */
+  border-radius: 5px; /* Match the border radius of the image */
+  padding: 10px; /* Add padding for better readability */
+  box-sizing: border-box; /* Include padding in the element's dimensions */
+  transition: opacity 0.3s ease; /* Smooth transition for visibility */
+}
+
+.timeline-card:hover p {
+  opacity: 1; /* Make the paragraph visible on hover */
 }
 
 /* Footer Styling */
