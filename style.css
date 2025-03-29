@@ -38,8 +38,9 @@ header p {
   display: flex; /* Use flexbox to arrange cards in a row */
   flex-wrap: nowrap; /* Prevent wrapping to keep all cards in a single row */
   gap: 20px; /* Add space between cards */
-  max-width: 100%; /* Restrict the container to the full width of the page */
+  max-width: 70%; /* Restrict the container to 70% of the page width */
   overflow-x: auto; /* Allow horizontal scrolling */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .timeline-card {
