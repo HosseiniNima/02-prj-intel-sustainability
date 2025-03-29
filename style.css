@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 /* Body Styling */
@@ -59,6 +59,7 @@ section .timeline-cards {
   overflow-x: auto; /* Enable horizontal scrolling for the cards */
   scroll-snap-type: x mandatory; /* Enable smooth snapping for scrolling */
   margin: 0 auto; /* Center the cards within the section */
+  width: 100%; /* Make the cards span the full width of the page */
 }
 
 section div {
