@@ -9,7 +9,7 @@ body {
 /* Header Styling */
 header {
   text-align: center;
-  background-color: #f4f4f4;
+  background: linear-gradient(to bottom right, #00d7fd, #004080); /* Adjust gradient to a darker blue */
   padding: 20px;
 }
 
@@ -18,13 +18,17 @@ header img {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 10px 0;
+  color: #fff; /* Set the main heading text color to white */
 }
 
 header p {
-  font-size: 1rem;
-  color: #555;
+  font-size: 1.2rem;
+  color: #fff; /* Set the subheading text color to white */
+  margin: 5px auto; /* Center the paragraph horizontally */
+  line-height: 1.4; /* Adjust line height for better readability on multiple lines */
+  max-width: 400px; /* Restrict the width to approximately 8 words per line */
 }
 
 /* Timeline Section */
@@ -88,7 +92,7 @@ header p {
   left: 0; /* Align to the left of the card */
   width: 100%; /* Make the paragraph span the full width of the card */
   height: 100%; /* Make the paragraph span the full height of the card */
-  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent black background */
+  background-color: #004080; /* Add a semi-transparent black background */
   color: #fff; /* Set text color to white for contrast */
   display: flex; /* Use flexbox to center the text */
   align-items: center; /* Vertically center the text */
@@ -101,7 +105,7 @@ header p {
 }
 
 .timeline-card:hover p {
-  opacity: 1; /* Make the paragraph visible on hover */
+  opacity: 0.85; /* Make the paragraph visible on hover */
 }
 
 /* Footer Styling */
