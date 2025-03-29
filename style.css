@@ -40,6 +40,7 @@ header p {
   gap: 20px; /* Add space between cards */
   max-width: 70%; /* Restrict the container to 70% of the page width */
   overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
   margin: 0 auto; /* Center the container horizontally */
 }
 
@@ -62,18 +63,22 @@ header p {
 
 .timeline-card img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   display: block; /* Ensure the image behaves as a block element */
 }
 
 .timeline-card h2 {
   font-size: 1.5rem;
   color: #333;
+  text-align: center; /* Center the text horizontally */
+  margin: 10px 0; /* Add some spacing around the heading */
 }
 
 .timeline-card h3 {
   font-size: 1.2rem;
-  color: #555;
+  color: #000000;
+  text-align: center; /* Center the text horizontally */
+  margin: 10px 0; /* Add some spacing around the subheading */
 }
 
 .timeline-card p {
